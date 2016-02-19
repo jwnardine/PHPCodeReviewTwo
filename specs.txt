@@ -1,0 +1,23 @@
+Specs List
+
+1.) Behavior: Input a single word, output that word
+    Input: 'apple'
+    Output: 'apple'
+    Why: Make sure that the program can input and output a single word.
+
+2.) Behavior: Input a multiple words, output those words
+    Input: 'apple pie'
+    Output: 'apple pie'
+    Why: Make sure that the program can input and output more than one word.
+
+3.) Behavior: Find a specific word in a sentence of words
+    Input1: 'apple'
+    Input2: 'this right here is some good apple pie'
+    Output: 'true'
+    Why: Make sure that the program can identify that a specific word is in a sentence.
+
+4.) Behavior: Find and output the number of times a specific word is found in a sentence
+    Input1: 'apple'
+    Input2: 'this right here is some good apple pie'
+    Output: '1'
+    Why: Make sure that the program can count how many times an input word appears in a sentence.
