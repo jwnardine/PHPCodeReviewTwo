@@ -20,7 +20,8 @@ class CountRepeat
       }
       function countRepeats($input_word, $input_sentence)
         {
-          $explode_words = explode(" ", $input_sentence);
+          $lowercase_sentence = strtolower($input_sentence);
+          $explode_words = explode(" ", $lowercase_sentence);
           $word_count = 0;
           foreach($explode_words as $word)
           {

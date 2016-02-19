@@ -61,5 +61,18 @@
             //Assert
             $this->assertEquals(3, $result);
         }
+        function test_input_countRepeatsNotCaseSensitive()
+        {
+            //Arrange
+            $test_CountRepeat = new CountRepeat;
+            $input_word = "apple";
+            $input_sentence = "Apple is the key ingredient in apple pie";
+
+            //Act
+            $result = $test_CountRepeat->countRepeats($input_word, $input_sentence);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
     }
 ?>
