@@ -35,7 +35,7 @@
             //Assert
             $this->assertEquals(true, $result);
         }
-        function test_input_countWord()
+        function test_input_countWordSingleInstance()
         {
             //Arrange
             $test_CountRepeat = new CountRepeat;
@@ -47,6 +47,19 @@
 
             //Assert
             $this->assertEquals(1, $result);
+        }
+        function test_input_countWordMultipleInstances()
+        {
+            //Arrange
+            $test_CountRepeat = new CountRepeat;
+            $input_word = "apple";
+            $input_sentence = "the best apple for making apple pie is the granny smith apple";
+
+            //Act
+            $result = $test_CountRepeat->countWord($input_word, $input_sentence);
+
+            //Assert
+            $this->assertEquals(3, $result);
         }
     }
 ?>

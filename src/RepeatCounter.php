@@ -18,10 +18,19 @@ class CountRepeat
           }
               return true;
       }
-      function countWord($input_sentence, $input_word)
-      {
-        
+      function countWord($input_word, $input_sentence)
+        {
+          $explode_words = explode(" ", $input_sentence);
+          $word_count = 0;
+          foreach($explode_words as $word)
+          {
+            if ($word == $input_word)
+                {
+                  $word_count += 1;
+                }
+          }
+            return $word_count;
+        }
       }
-  }
 
 ?>
