@@ -22,5 +22,18 @@
         //Assert
         $this->assertEquals("apple pie", $result);
         }
+        function test_input_findword()
+        {
+            //Arrange
+            $test_CountRepeat = new CountRepeat;
+            $input_word = "apple";
+            $input_sentence = "this right here is some good apple pie";
+
+            //Act
+            $result = $test_CountRepeat->findWord($input_word, $input_sentence);
+
+            //Assert
+            $this->assertEquals(true, $result);
+        }
     }
 ?>
