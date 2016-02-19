@@ -35,5 +35,18 @@
             //Assert
             $this->assertEquals(true, $result);
         }
+        function test_input_countWord()
+        {
+            //Arrange
+            $test_CountRepeat = new CountRepeat;
+            $input_word = "apple";
+            $input_sentence = "this right here is some good apple pie";
+
+            //Act
+            $result = $test_CountRepeat->countWord($input_word, $input_sentence);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
     }
 ?>

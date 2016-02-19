@@ -21,3 +21,9 @@ Specs List
     Input2: 'this right here is some good apple pie'
     Output: '1'
     Why: Make sure that the program can count how many times an input word appears in a sentence.
+
+5.) Behavior: Find and output the number of times a specific word is found in a sentence
+    Input1: 'apple'
+    Input2: 'the best apple for making apple pie is the granny smith apple'
+    Output: '3'
+    Why: Make sure that the program can count how many times an input word appears in a sentence, including if the word appears in the sentence multiple times.
