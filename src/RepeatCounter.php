@@ -19,7 +19,7 @@ class CountRepeat
               return true;
       }
       function countRepeats($input_word, $input_sentence)
-        {
+      {
           $lowercase_sentence = strtolower($input_sentence);
           $explode_words = explode(" ", $lowercase_sentence);
           $word_count = 0;
@@ -32,6 +32,6 @@ class CountRepeat
           }
             return $word_count;
         }
-      }
+    }
 
 ?>
