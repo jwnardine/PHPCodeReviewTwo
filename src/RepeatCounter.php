@@ -6,6 +6,10 @@ class CountRepeat
       {
         return $input;
       }
+      function multipleWords($input)
+              {
+                  return $input;
+              }
 
   }
 

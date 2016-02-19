@@ -12,5 +12,15 @@
         //Assert
         $this->assertEquals("apple", $result);
         }
+        function test_input_multipleWords()
+        {
+        //Arrange
+        $test_CountRepeat = new CountRepeat;
+        $input = "apple pie";
+        //Act
+        $result = $test_CountRepeat->multipleWords($input);
+        //Assert
+        $this->assertEquals("apple pie", $result);
+        }
     }
 ?>
