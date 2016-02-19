@@ -8,9 +8,9 @@
     $app->get("/", function() use ($app) {
         return $app['twig']->render('form.html.twig');
     });
-    $app->get("/word_sentence", function() use($app) {
-        $my_RepeatCounter = new RepeatCounter;
-        $check_results = $my_RepeatCounter->countRepeats($_GET['word'], $_GET['sentence']);
+    $app->post("/results", function() use($app) {
+        $my_CountRepeat = new CountRepeat;
+        $check_results = $my_CountRepeat->countRepeats($_POST['word'], $_POST['sentence']);
         return $app['twig']->render('results.html.twig', array('result' => $check_results));
     });
     return $app;
