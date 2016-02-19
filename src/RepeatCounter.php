@@ -18,7 +18,7 @@ class CountRepeat
           }
               return true;
       }
-      function countWord($input_word, $input_sentence)
+      function countRepeats($input_word, $input_sentence)
         {
           $explode_words = explode(" ", $input_sentence);
           $word_count = 0;
