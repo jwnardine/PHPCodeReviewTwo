@@ -27,3 +27,8 @@ Specs List
     Input2: 'the best apple for making apple pie is the granny smith apple'
     Output: '3'
     Why: Make sure that the program can count how many times an input word appears in a sentence, including if the word appears in the sentence multiple times.
+6.) Behavior: Find and output the number of times a specific word is found in a sentence, without being case sensitive
+    Input1: 'apple'
+    Input2: "Apple is the key ingredient in apple pie"
+    Output: '2'
+    Why: Because we want to make sure than our word counter is not case sensitive
